@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Your Front Page</title>
+  </head>
+  
+  <body>
+    {% if perm == True %}
+    IN
+    <br>
+    <form action="/logout">
+      <input type="submit" value="Logout" />
+    </form>
+    
+    {% else %}
+    OUT
+    {% endif %}
+  </body>
+
+</html>
